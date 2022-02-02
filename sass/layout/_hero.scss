@@ -46,3 +46,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .flex-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .modal-btn{
+    transform: translateX(60%);
+  }
