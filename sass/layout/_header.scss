@@ -47,6 +47,11 @@
   margin-left: auto;
   padding-top: 32px;
   padding-bottom: 32px;
+  &:hover,
+  &:focus,
+  .current {
+    color: var(--accent-color);
+  }
   transition: color var(--transition) 
   }
   .header-icons {
@@ -66,9 +71,5 @@
   }
 
 
-  .header-nav-link:hover,
-  .header-nav-link:focus,
-  .current {
-    color: var(--accent-color);
-  }
+  
   

@@ -24,11 +24,6 @@
    
   }
   
-  .hero-btn:hover,
-  .hero-btn:focus {
-    background-color: var(--button-hover);
-  }
-  
   .hero-btn{
     border: transparent;
     font-weight: 700;
@@ -42,6 +37,10 @@
     padding: 10px 32px;
     min-width: 200px;
     min-height: 50px;
+    &:hover,
+    &:focus {
+    background-color: var(--button-hover);
+  }
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -52,4 +51,8 @@
   }
   .modal-btn{
     transform: translateX(60%);
+    &:hover,
+    &:focus{
+     color: var(--external-color);
+  }
   }

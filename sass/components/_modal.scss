@@ -39,13 +39,12 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     border-radius: 50%;
+    &:hover,
+    &:focus{
+      fill: var(--accent-color);
+    }
     transition: fill var(--transition);
     
-  }
-  .button-close:hover,
-  .button-close:focus {
-  fill: var(--accent-color);
-  
   }
   
   
@@ -67,9 +66,6 @@
     transform: translate(-50%, 0%) scale(0);
   }
   
-  .form-input:focus{
-    border-color: var(--accent-color);
-  }
   
   
   .modal-title{
@@ -114,6 +110,17 @@
     box-sizing: border-box;
     border-radius: 4px;
     color: var(--title-color);
+    &:focus{
+      border-color: var(--accent-color);
+    }
+    &:focus + .form-svg,
+    &:hover + .form-svg {
+      fill: var(--accent-color);
+    }
+    &:hover,  .modal-textarea:hover,
+    &:focus,  .modal-textarea:focus {
+    border-color: var(--accent-color);
+  }
     transition: var(--transition);
   
   }
@@ -126,18 +133,8 @@
     transition: fill var(--transition);
   }
   
-  .form-input:hover,  .modal-textarea:hover,
-  .form-input:focus,  .modal-textarea:focus {
-    border-color: var(--accent-color);
-  }
   
-  
-  .form-input:focus + .form-svg,
-  .form-input:hover + .form-svg {
-    fill: var(--accent-color);
-  }
-  
-  
+
   .footer-cont-item:not(:last-child){
     margin-right: 70px;
   }
@@ -145,10 +142,7 @@
     margin-left: auto;
   }
   
-  .modal-btn:hover,
-  .modal-btn:focus{
-     color: var(--external-color);
-  }
+  
   .modal-textarea{
     display: block;
     outline: none;
@@ -159,12 +153,12 @@
     box-sizing: border-box;
     border-radius: 4px;
     resize: none;
+    &::placeholder{
+      color: var(--grey-rgba);
+    }
     transition: var(--transition);
   }
   
-  .modal-textarea::placeholder{
-    color: var(--grey-rgba);
-  }
   
   .form-field-checkbox{
     margin-bottom: 30px;
@@ -203,10 +197,7 @@
     fill: transparent;
     transition: fill, border var(--transition);
   }
-  .check-text:hover,
-  .check-text:focus{
-    border-color: var(--accent-color);
-  }
+  
   .button-close:hover,
   .button-close:focus{
     fill: var(--accent-color);
@@ -219,6 +210,10 @@
     letter-spacing: 0.03em;
     display: flex;
     align-items: center;
+    &:hover,
+    &:focus{
+    border-color: var(--accent-color);
+  }
     justify-content: center;
   }
   

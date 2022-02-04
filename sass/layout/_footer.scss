@@ -22,11 +22,7 @@
     margin-top: 20px;
   }
   
-  .social-links:focus,
-  .social-links:hover {
-    color:var(--external-color);
-    background-color: var(--accent-color);
-    }
+  
      
    
   .social-item:not(:last-child) {
@@ -41,6 +37,15 @@
     align-items: center;
     border-radius: 50%;
     color:var(--icons-color);
+    &:focus,
+    &:hover {
+    color:var(--external-color);
+    background-color: var(--accent-color);
+    }
+    &:hover .team-social-icons,
+    &:focus .team-social-icons {
+    fill: var(--external-color);}
+
     transition: color var(--transition), background-color var(--transition) }
   .social-icons {
     fill: currentColor;
@@ -67,6 +72,10 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+  }
     transition:  var(--transition) 
     
   }
@@ -75,10 +84,7 @@
     color: #ffffff;
   }
   
-  .footer-addr-link:hover,
-  .footer-addr-link:focus {
-    color: var(--accent-color);
-  }
+  
   /*---------------Вторая часть футера------------*/
   .footer-title {
     font-weight: 700;
@@ -109,14 +115,15 @@
   outline: none;
   background-color: inherit;
   color: var(--external-color);
+  &:hover,
+  &:focus {
+  border-color: var(--accent-color);
+}
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-input-email:hover,
-.footer-input-email:focus {
-  border-color: var(--accent-color);
-}
+
 
 .footer-form {
   display: flex;

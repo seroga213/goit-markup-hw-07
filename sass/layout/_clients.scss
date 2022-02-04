@@ -20,6 +20,10 @@
     justify-content: center;
     align-items: center;
     height: 92px;
+    &:hover,
+    &:focus {
+    color: var(--accent-color)
+  }
     transition: color var(--transition) 
   }
   
@@ -28,7 +32,4 @@
   }
   
   
-  .client-link:hover,
-  .client-link:focus {
-    color: var(--accent-color)
-  }
+  
