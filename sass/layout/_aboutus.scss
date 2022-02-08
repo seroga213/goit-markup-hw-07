@@ -1,4 +1,4 @@
-.about-us-container {
+.peculiarities__wrap {
     background: var(--ex-bg-color);
     border-radius: 4px;
     display: flex;
@@ -8,7 +8,7 @@
   }
 
     
-    .about-us-list{  
+    .peculiarities{  
       display: flex;
       flex-wrap: wrap;
       margin-left: -30px;
@@ -18,19 +18,19 @@
     .about-us{
       padding-bottom: 0;
     }
-    .about-item{
+    .peculiarities__item{
       margin-left: 30px;
       margin-top: 30px;
       flex-basis:  calc(100% / 4 - 30px)
     }
 
-    .about-us-text{
+    .peculiarities__text{
       font-size: 14px;
       line-height: 1.71;
       letter-spacing: 0.03em;
 
     }
-    .about-us-title {
+    .peculiarities__title {
       font-weight: 700;
       font-size: 14px;
       line-height: 1.14;

@@ -1,4 +1,4 @@
-.overlay-js{
+.overlay_js{
     position: fixed;
     top: 0;
     width: 100vw;
@@ -26,7 +26,7 @@
     transition: transform 550ms;
   }
   
-  .button-close {
+  .button__close {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,11 +49,11 @@
   
   
   
-  .form-field{
+  .modal-form__field{
     margin-bottom: 10px;
   }
   
-  .form-field-textarea{
+  .textarea-wrap{
     margin-bottom: 20px;
   }
   
@@ -68,7 +68,7 @@
   
   
   
-  .modal-title{
+  .modal__title{
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -84,7 +84,7 @@
   }
   
   
-  .modal-label{
+  .modal-form__label{
     display: block;
     font-size: 12px;
     line-height: 1.17;
@@ -95,13 +95,13 @@
   }
   
   
-  .svg-position{
+  .modal-form__container{
     position: relative;
     margin-bottom: 10px;
   }
   
   
-  .form-input{
+  .modal-form__input{
     outline: none;
     width: 100%;
     height: 40px;
@@ -113,19 +113,19 @@
     &:focus{
       border-color: var(--accent-color);
     }
-    &:focus + .form-svg,
-    &:hover + .form-svg {
+    &:focus + .modal-form__svg,
+    &:hover + .modal-form__svg {
       fill: var(--accent-color);
     }
-    &:hover,  .modal-textarea:hover,
-    &:focus,  .modal-textarea:focus {
+    &:hover  
+    &:focus   {
     border-color: var(--accent-color);
   }
     transition: var(--transition);
   
   }
   
-  .form-svg {
+  .modal-form__svg {
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
@@ -143,7 +143,7 @@
   }
   
   
-  .modal-textarea{
+  .textarea-wrap__textarea{
     display: block;
     outline: none;
     width: 100%;
@@ -157,6 +157,10 @@
       color: var(--grey-rgba);
     }
     transition: var(--transition);
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+    }
   }
   
   
