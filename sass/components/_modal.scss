@@ -1,4 +1,4 @@
-.overlay_js{
+.overlay-js{
     position: fixed;
     top: 0;
     width: 100vw;
@@ -7,7 +7,7 @@
     transition: opacity 500ms, visibility 500ms;
   }
   
-  .backdrop.is-hidden .modal {
+  .overlay-js.is-hidden .modal {
     transform: scale(0.1);
   }
   
@@ -164,7 +164,7 @@
   }
   
   
-  .form-field-checkbox{
+  .check-wrap{
     margin-bottom: 30px;
   }
   .policy-check:checked + .check-text .check-span {
@@ -202,8 +202,8 @@
     transition: fill, border var(--transition);
   }
   
-  .button-close:hover,
-  .button-close:focus{
+  .button__close:hover,
+  .button__close:focus{
     fill: var(--accent-color);
   }
   
@@ -221,7 +221,13 @@
     justify-content: center;
   }
   
-  
+  .modal-btn{
+    transform: translateX(60%);
+    &:hover,
+    &:focus{
+     color: var(--external-color);
+  }
+  }
   
   .label-link{
     color: var(--accent-color);

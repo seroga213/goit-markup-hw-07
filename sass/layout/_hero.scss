@@ -49,10 +49,4 @@
     display: flex;
     justify-content: center;
   }
-  .modal-btn{
-    transform: translateX(60%);
-    &:hover,
-    &:focus{
-     color: var(--external-color);
-  }
-  }
+ 
