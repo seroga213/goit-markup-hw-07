@@ -112,7 +112,7 @@ img {
   color: #ffffff;
 }
 
-.overlay_js {
+.backdrop {
   position: fixed;
   top: 0;
   width: 100vw;
@@ -121,7 +121,7 @@ img {
   transition: opacity 500ms, visibility 500ms;
 }
 
-.backdrop.is-hidden .modal {
+.overlay-js.is-hidden .modal {
   transform: scale(0.1);
 }
 
@@ -167,13 +167,13 @@ img {
   margin-bottom: 20px;
 }
 
-.overlay-js.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
-.overlay-js.is-hidden .modal {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, 0%) scale(0);
 }
 
@@ -267,7 +267,7 @@ img {
   border-color: var(--accent-color);
 }
 
-.form-field-checkbox {
+.check-wrap {
   margin-bottom: 30px;
 }
 
@@ -303,8 +303,8 @@ img {
   transition: fill, border var(--transition);
 }
 
-.button-close:hover,
-.button-close:focus {
+.button__close:hover,
+.button__close:focus {
   fill: var(--accent-color);
 }
 
@@ -319,6 +319,14 @@ img {
 
 .check-text:hover, .check-text:focus {
   border-color: var(--accent-color);
+}
+
+.modal__btn {
+  transform: translateX(60%);
+}
+
+.modal__btn:hover, .modal__btn:focus {
+  color: var(--external-color);
 }
 
 .label-link {
@@ -690,14 +698,6 @@ img {
 .flex-btn {
   display: flex;
   justify-content: center;
-}
-
-.modal-btn {
-  transform: translateX(60%);
-}
-
-.modal-btn:hover, .modal-btn:focus {
-  color: var(--external-color);
 }
 
 .btn-container {

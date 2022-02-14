@@ -1,4 +1,4 @@
-.overlay-js{
+.backdrop{
     position: fixed;
     top: 0;
     width: 100vw;
@@ -57,12 +57,12 @@
     margin-bottom: 20px;
   }
   
-  .overlay-js.is-hidden {
+  .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
   }
-  .overlay-js.is-hidden .modal{
+  .backdrop.is-hidden .modal{
     transform: translate(-50%, 0%) scale(0);
   }
   
@@ -221,7 +221,7 @@
     justify-content: center;
   }
   
-  .modal-btn{
+  .modal__btn{
     transform: translateX(60%);
     &:hover,
     &:focus{
