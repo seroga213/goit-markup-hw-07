@@ -1,15 +1,6 @@
-.client {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-  }
-  
-  .client__item{
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis:  calc(100% / 6 - 30px)
-  }
+.clients{
+  --card-item:6
+}
   
   .client__link {
     border: 1px solid currentColor;
